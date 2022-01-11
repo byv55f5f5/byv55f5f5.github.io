@@ -6,14 +6,16 @@ categories: docker
 author: "愛喝茶的熊"
 tags: docker gitlab-runner gitlab
 ---
-# Step To Install GitLab Runner
-  - 安裝ubuntu 20.04.3 (LTS) VM
-    - minimal install
-    - not install 3rd-party software
-  - 安裝GitLab Runner: [Install GitLab Runner using the - official GitLab repositories | GitLab](https://docs.gitlab.com/runner/install/linux-repository.html)
-  - 安裝Docker: [Install Docker Engine on Ubuntu | Docker Documentation](https://docs.docker.com/engine/install/ubuntu/)
-  - 註冊GitLab Runner: [Registering runners | GitLab](https://docs.gitlab.com/runner/register/index.html#linux)
+一直以來都對GitLab runner感到好奇。好奇到底是誰在跑那些job / stage
+所以就跟主管討論去熟悉一下這邊的建置
 
+# Step To Install GitLab Runner
+- 安裝ubuntu 20.04.3 (LTS) VM
+  - minimal install
+  - not install 3rd-party software
+- 安裝GitLab Runner: [Install GitLab Runner using the \- official GitLab repositories \| GitLab](https://docs.gitlab.com/runner/install/linux-repository.html)
+- 安裝Docker: [Install Docker Engine on Ubuntu \| Docker Documentation](https://docs.docker.com/engine/install/ubuntu/)
+- 註冊GitLab Runner: [Registering runners \| GitLab](https://docs.gitlab.com/runner/register/index.html#linux)
 
 # Build Docker By CI / CD
 ## Use the shell executor
@@ -39,9 +41,10 @@ Docker 19.03 does this automatically by setting the DOCKER_HOST in https://githu
 在 Docker 19.03.12 版本後，預設會啟用TLS連線。需要mount "/certs/client" ，好讓dind service使用憑證。
 
 - 編輯GitLab Runner設定檔 /etc/gitlab-runner/config.toml
-    1. 將 runners.docker 底下的 privileged 改成 true
-    2. 新增 "/certs/client" 在 runners.dockers.volumes 底下
-    3. example:
+  1. 將 runners.docker 底下的privileged 改成 true
+  2. 新增 "/certs/client" 在 runners.dockers.volumes 底下
+  3. example:
+
 ```toml
 # /etc/gitlab-runner/config.toml
 concurrent = 1
@@ -72,10 +75,9 @@ check_interval = 0
 ```
 
 - 在gitlab-ci.yml build docker的stage中加入docker-dind的services
-- 加入變數 DOCKER_TLS_CERTDIR: "/certs"
+- 加入變數DOCKER_TLS_CERTDIR: "/certs"
 
 ```yaml
-
 #---
 
 variables:
@@ -95,7 +97,9 @@ pack-docker:
 - 編輯GitLab Runner設定檔 /etc/gitlab-runner/config.toml
     - 新增"/var/run/docker.sock:/var/run/docker.sock"在 runners.docker.volumes中
     - example:
+
 ```toml
+# /etc/gitlab-runner/config.toml
 concurrent = 1
 check_interval = 0
 

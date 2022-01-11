@@ -6,7 +6,9 @@ categories: javascript
 author: "愛喝茶的熊"
 tags: javascript es2015 webpack eslint
 ---
-往往在專案中，都會使用相對路徑(relative path)來import module，例如:
+往往在專案中，都會使用相對路徑(relative path)來import module，但是當程式檔案開始變多，就會花更多的時間去寫".."這種多餘的文字。
+其實是可以透過設定讓我們可以直接使用絕對路徑的
+
 ```jsx
 import Header from "../features/Header";
 

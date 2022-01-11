@@ -6,8 +6,6 @@ categories: javascript
 author: "愛喝茶的熊"
 tags: javascript formdata php html
 ---
-> 這篇是轉自我自己的medium，並稍作修改
-
 這幾天幫公司部門寫了一個excel轉JS檔案的簡易UI系統。用途為將各專案管理字串的excel檔案，轉換成特定格式的JS檔案。
 
 同事希望可以順便備份上傳的excel檔案至NAS上，所以就用到了FormData及fetch API。其實之前已經實做過類似的功能，但這次使用到又必須到處翻過去的專案來找code很麻煩，就記錄在這裡好了。

@@ -6,7 +6,9 @@ categories: docker
 author: "愛喝茶的熊"
 tags: docker nginx
 ---
-練習如何使用指令操作docker
+由於最近工作需要將網頁放在docker上run，
+就在這邊紀錄使用到的docker指令
+
 ## 基本操作
 
 ### 列出目前系統上的docker
