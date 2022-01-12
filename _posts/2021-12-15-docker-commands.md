@@ -2,7 +2,7 @@
 layout: post
 title:  "Docker指令紀錄"
 date:   2021-12-15 16:30:00 +0800
-categories: docker
+categories: notes
 author: "愛喝茶的熊"
 tags: docker nginx
 ---

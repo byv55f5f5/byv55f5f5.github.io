@@ -2,7 +2,7 @@
 layout: post
 title:  "GitLab Runner (Docker Executor)"
 date:   2021-12-17 16:00:00 +0800
-categories: docker
+categories: notes
 author: "愛喝茶的熊"
 tags: docker gitlab-runner gitlab
 ---

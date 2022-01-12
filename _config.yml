@@ -21,7 +21,7 @@
 title: 愛喝茶的熊的程式隨寫紀錄
 email: byv55f5f5@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  終於我也有自己的github page，在github寫程式相關的紀錄果然還是比較合理。
+  Notes belong to a Web Frontend Developer.
 baseurl: "" # the subpath of your site, e.g. /blog
 github_username:  byv55f5f5
 domain: byv55f5f5.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
@@ -33,11 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
-# GitHub settings
-github:
-  is_project_page: false
-  is_user_page: false
-
+# Google Analytics
 google_analytics: true
 
 # Exclude from processing.

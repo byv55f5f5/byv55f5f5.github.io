@@ -2,7 +2,7 @@
 layout: post
 title:  "GitHub page 誕生了"
 date:   2021-08-11 18:00:00 +0800
-categories: log
+categories: notes
 author: "愛喝茶的熊"
 tags: log medium GitHub
 ---

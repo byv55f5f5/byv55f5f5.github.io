@@ -2,15 +2,15 @@
 layout: post
 title:  "設定專案使用絕對路徑"
 date:   2021-08-26 23:10:00 +0800
-categories: javascript
+categories: notes
 author: "愛喝茶的熊"
 tags: javascript es2015 webpack eslint
 ---
-往往在專案中，都會使用相對路徑(relative path)來import module，但是當程式檔案開始變多，就會花更多的時間去寫".."這種多餘的文字。
-其實是可以透過設定讓我們可以直接使用絕對路徑的
+往往在專案中，都會使用相對路徑(relative path)來import module，但是當程式檔案開始變多，此時就需要寫很多的`../../../`。
+如以下範例:
 
 ```jsx
-import Header from "../features/Header";
+import Header from "../../../features/Header";
 
 const App = () => (
   <div className="app">
@@ -18,7 +18,7 @@ const App = () => (
   </div>
 );
 ```
-偶爾會寫到component放在很深的資料夾底下，此時就需要寫很多的`../../../`。
+
 然而最近學到可以透過設定來使用絕對路徑(absolute path)來import module，就會變成:
 ```jsx
 import Header from "features/Header";
@@ -54,22 +54,27 @@ yarn add --dev eslint-plugin-import
 // eslintrc.js
 // ...
 settings: {
+  // eslint-plugin-import
   'import/resolver': {
+    // eslint-import-resolver-node (default)
     node: {
       extensions: ['.js', '.jsx'],
       moduleDirectory: ['node_modules', 'src'],
-    }
-  }
-}
+    },
+  },
+},
 // ...
 ```
 
-最後，若你是使用vscode，可以去編輯`jsconfig.json`來增加vscode的intellisense，如下
+最後，若你是使用vscode，可以去編輯`jsconfig.json`，新增baseUrl來增加vscode的intellisense，如下
 ```json
 {
   "compilerOptions": {
-    "baseUrl": "src"
-  }
+    "baseUrl": "src",
+    "jsx": "react"
+  },
+  "exclude": ["node_modules", "build"],
+  "include": ["src/**/*"]
 }
 ```
 

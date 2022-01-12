@@ -2,7 +2,7 @@
 layout: post
 title:  "使用FormData及fetch API上傳檔案"
 date:   2021-08-14 17:25:00 +0800
-categories: javascript
+categories: notes
 author: "愛喝茶的熊"
 tags: javascript formdata php html
 ---
