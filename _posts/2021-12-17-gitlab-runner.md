@@ -6,8 +6,7 @@ categories: notes
 author: "愛喝茶的熊"
 tags: docker gitlab-runner gitlab
 ---
-一直以來都對GitLab runner感到好奇。好奇到底是誰在跑那些job / stage
-所以就跟主管討論去熟悉一下這邊的建置
+一直以來都對GitLab runner感到好奇。好奇到底是誰在跑那些job / stage，所以就跟主管討論去熟悉一下這邊的建置
 
 # Step To Install GitLab Runner
 - 安裝ubuntu 20.04.3 (LTS) VM

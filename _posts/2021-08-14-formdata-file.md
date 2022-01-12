@@ -10,7 +10,7 @@ tags: javascript formdata php html
 
 同事希望可以順便備份上傳的excel檔案至NAS上，所以就用到了FormData及fetch API。其實之前已經實做過類似的功能，但這次使用到又必須到處翻過去的專案來找code很麻煩，就記錄在這裡好了。
 
-先在HTML宣告一個 input:file 元素
+先在HTML宣告一個 input:file元素
 
 ```html
 <input type="file" name="file" id="xlsx-file" accept=".xlsx" />

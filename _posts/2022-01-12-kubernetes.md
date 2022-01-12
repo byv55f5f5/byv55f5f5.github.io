@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Kubernetes 筆記"
-date:   2022-01-12 11:00:00 +0800
+date:   2022-01-12 20:00:00 +0800
 categories: notes
 author: "愛喝茶的熊"
 tags: docker k8s kubernetes
@@ -137,5 +137,10 @@ $ kubectl delete -f ${k8s_yaml}
 觀察deployment/statefulset rollout的狀態
 ```sh
 $ kubectl rollout status deployment/${deployment_name}
+```
+
+顯示某pods詳細資訊，可用來debug
+```sh
+$ kubectl describe pods ${pod_name}
 ```
 
