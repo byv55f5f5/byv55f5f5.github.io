@@ -17,6 +17,19 @@ tags: docker gitlab-runner gitlab
 - 註冊GitLab Runner: [Registering runners \| GitLab](https://docs.gitlab.com/runner/register/index.html#linux)
 
 # Build Docker By CI / CD
+**TL;DR**
+
+註冊GitLab runner時，使用以下command (Docker socket binding)
+```bash
+sudo gitlab-runner register -n \
+  --url ${gitlab_url} \
+  --registration-token ${registration_token} \
+  --executor docker \
+  --description "My Docker Runner" \
+  --docker-image "docker:19.03.12" \
+  --docker-volumes /var/run/docker.sock:/var/run/docker.sock
+```
+
 ## Use the shell executor
 直接使用GitLab Runner建立的環境去跑Job。該環境有哪些程式，在Job裡面就可以直接使用。
 
