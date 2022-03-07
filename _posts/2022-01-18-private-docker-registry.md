@@ -47,10 +47,10 @@ $ docker push <registry_domain>:<port>/<image_name>:<tag>
 $ docker pull <registry_domain>:<port>/<image_name>:<tag>
 ```
 
-# In GitLab runner
+# Insecure Registry in GitLab Runner
 直接使用Docker socket binding(mount `/var/run/docker.sock`)並在Host中的 `/etc/docker/daemon.json` 新增 `insecure-registries` 即可
 
-# Use it in minikube
+# Insecure Registry in minikube
 **P.S**: minikube的網路與外面互相隔離，故無法存取自己在外面建立的private registry, 只能enable minikube registry詳情參考[官網](https://minikube.sigs.k8s.io/docs/handbook/registry/)
 
 在minikube start時，需多加參數 `--insecure-registry` ，因為minikube預設cluster IP是在10.0.0.1，所以可透過以下指定:
@@ -58,3 +58,5 @@ $ docker pull <registry_domain>:<port>/<image_name>:<tag>
 $ minikube start --insecure-registry "10.0.0.0/24"
 ```
 
+# Insecure Registry in K8S
+必須在每個node中的 `/etc/docker/daemon.json` 新增 `insecure-registries` 即可。
