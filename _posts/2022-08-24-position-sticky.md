@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "Header Fixed Table"
+date:   2022-08-25 15:46:00 +0800
+categories: notes
+author: "愛喝茶的熊"
+tags: html css
+---
+
 一直以來如何讓Table的Header固定在最上方，這個問題困擾了我好久。
 
 從前，我都是將Header以及Body分成兩個Table。並將`table-layout`設定成`fixed`。並個別設定每一列(column)的寬度。
