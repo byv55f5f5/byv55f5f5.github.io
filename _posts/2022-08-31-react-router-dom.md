@@ -70,4 +70,4 @@ location / {
 > 為什麼不能直接手動去修改index.html?
 
 因為我的index.html是使用[HtmlWebpackPlugin](https://webpack.js.org/plugins/html-webpack-plugin/)。
-而且在某些用法如: code splitting，在js檔案裏面也會去load其他的js，就也會導致類似的問題。
+而且在某些用法如: code splitting、webpack federation，在js檔案裏面也會去load其他的js，就也會導致類似的問題。
