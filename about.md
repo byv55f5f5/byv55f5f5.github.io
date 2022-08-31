@@ -74,11 +74,14 @@ Service Composer是使用GoJS開發的圖形化設定介面。
 
 ##### Qrux (未上市)
 Qrux是QNAP計畫開發專門用來集中管理QNAP產品的雲端服務平台。
-為了User方便定位產品位置，初次使用[MapboxGL](https://docs.mapbox.com/mapbox-gl-js/guides/)去操作地圖相關功能。初期使用公司預設的style時，產生效能問題，因此去挑整將地圖上不需要顯示的東西給取消，才得以解決效能問題。
+因為此專案預計會與其他部門共同協作，我們使用了webpack federation module去實現micro-frontend架構。
+因為micro-frontend架構CSS會互相影響，此專案開始使用[TailwindCSS](https://tailwindcss.com/)，並介紹給同部門同事使用。
 使用CSS position:sticky; 屬性將table的header黏貼置頂，謝謝IE終於退休。
+為了User方便定位產品位置，初次使用[MapboxGL](https://docs.mapbox.com/mapbox-gl-js/guides/)去操作地圖相關功能。初期使用公司預設的style時，產生效能問題，因此去調整將地圖上不需要顯示的東西給取消，才得以解決效能問題。
 本專案我除了開發前端Web以外，還跟主管共同討論了雲端服務程式的架構。因此，我學會了使用docker、撰寫k8s resource、撰寫GitLab CI流程達成自動部署
 
 * * *
+
 ## 專業技能
 ### Web UI developing - Expert
 Front-end Development
