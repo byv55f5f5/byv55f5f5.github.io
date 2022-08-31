@@ -19,6 +19,35 @@ tags: html css
 
 這樣的話有sticky的元素就會在使用top等屬性指定的位置被"黏住"
 
+<div style="height:100px;overflow-y:scroll;">
+  <table>
+    <thead>
+      <tr>
+        <th style="position:sticky;top:0px;z-index:10;background:#000;">Header 1</th>
+        <th style="position:sticky;top:0px;z-index:10;background:#000;">Header 2</th>
+        <th style="position:sticky;top:0px;z-index:10;background:#000;">Header 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+      <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+        <td>Data 3</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 ```html
 <div>
   <table>
@@ -54,10 +83,12 @@ tags: html css
 table thead tr th {
   position: sticky;
   top: 0px;
+  z-index: 10;
+  background: #000;
 }
 
 div {
-  height: 50px;
-  overflow: scroll;
+  height: 100px;
+  overflow-y: scroll;
 }
 ```
