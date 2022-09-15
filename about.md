@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 # 許驛涵 (Charlie)
-<img src="https://upload.cc/i1/2022/08/27/GVQhNE.png" width="300px">
+<img src="assets/portrait.png" width="300px">
 
 A web developer.
 - 📍 Taipei, Taiwan.
@@ -39,12 +39,12 @@ A web developer.
 使用[gulp](https://gulpjs.com/)將部分程式碼minify。
 與公司ART團隊一同設計產品機器圖SVG，並可對之進行互動。
 此頁面為NAS網路介面的拓樸圖，是用jQuery去計算每個元件的位置，並用SVG去畫線連結各個元件。
-![Network & Virtual Switch](https://upload.cc/i1/2022/08/27/lcVC4X.png)
+![Network & Virtual Switch](assets/NVS_1.png)
 
 ##### QIoT
 此應用是以NAS來當主要中樞，並與其他家電實現IoT架構。是當時QNAP主要的主力產品之一。與另一名前端工程師協力開發。
 此應用開始使用ReactJS框架開發網頁，當時使用的資料流框架是[Flux](https://facebook.github.io/flux/)
-![QIoT](https://upload.cc/i1/2022/08/30/1URWSC.jpg)
+![QIoT](assets/QIoT_1.png)
 
 #### 中期
 在公司熟悉環境及人脈之後。開始偏向自己與PM、後端工程師、美術溝通，開發應用的前端網頁UI。
@@ -53,21 +53,21 @@ A web developer.
 QNAP產品所使用的防毒軟體。此專案是我第一個自己從零開始開發的案子，也開始獨立開發，自己跟PM、後端RD、ART討論溝通進度。
 此專案開始嘗試使用[Redux](https://redux.js.org/)資料流架構，並指導同部門前端RD使用。
 開始嘗試自行撰寫webpack config，區分dev / production mode。
-![McAfee](https://upload.cc/i1/2022/08/30/HPpqB0.png)
+![McAfee](assets/McAfee.png)
 
 ##### QNE Network Manager
 此專案原先也包含圖形化設定介面，當時使用[react-draggable](https://github.com/react-grid-layout/react-draggable)以及操作svg畫圖實作。
-![QNE Network Manager](https://upload.cc/i1/2022/08/30/lV7rX8.png)
+![QNE Network Manager](assets/QNE_Network_Manager.png)
 
 ##### Service Composer
 Service Composer是使用GoJS開發的圖形化設定介面。
 此時開始嘗試使用[redux toolkit](https://redux-toolkit.js.org/)，並介紹給同事使用。
-![Service Composer](https://upload.cc/i1/2022/08/30/L8yzoq.png)
+![Service Composer](assets/Service_Composer.png)
 
 ##### QSS (QNAP Switch System)
 此案子原為其他部門使用Vue.js撰寫的。我們的工作是透過閱讀Vue.js的source code並把它改成ReactJS的架構。
 開始使用[echarts](https://echarts.apache.org/zh/index.html)繪製各種統計圖。
-![QSS](https://upload.cc/i1/2022/08/30/SzM0D6.png)
+![QSS](assets/QSS.png)
 
 #### 近期
 此時轉調部門，開始開發雲端服務，並回歸與其他前端工程師同時開發。
