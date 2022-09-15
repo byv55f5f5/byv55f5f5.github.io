@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 # 許驛涵 (Charlie)
-<img src="assets/portrait.png" width="300px">
+<img src="/assets/portrait.png" width="300px">
 
 A web developer.
 - 📍 Taipei, Taiwan.
@@ -44,7 +44,7 @@ A web developer.
 ##### QIoT
 此應用是以NAS來當主要中樞，並與其他家電實現IoT架構。是當時QNAP主要的主力產品之一。與另一名前端工程師協力開發。
 此應用開始使用ReactJS框架開發網頁，當時使用的資料流框架是[Flux](https://facebook.github.io/flux/)
-![QIoT](assets/QIoT_1.png)
+![QIoT](assets/QIoT_1.jpg)
 
 #### 中期
 在公司熟悉環境及人脈之後。開始偏向自己與PM、後端工程師、美術溝通，開發應用的前端網頁UI。
