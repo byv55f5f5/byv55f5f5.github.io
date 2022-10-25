@@ -23,3 +23,6 @@ $ docker network ls
 ```
 $ docker network inspect <network_id>
 ```
+
+子網路區段最後一個IP(通常是255)是廣播
+子網路區段倒數第二個IP(通常是254)是default gateway
